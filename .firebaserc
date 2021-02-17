@@ -1,9 +1,12 @@
 {
   "targets": {
-    "jaspero-jms": {
+    "healthy-habits-mm": {
       "hosting": {
         "cms": [
-          "jaspero-jms"
+          "cms-healthy-habits"
+        ],
+        "website": [
+          "healthy-habits-mm"
         ]
       }
     }

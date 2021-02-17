@@ -4,7 +4,6 @@ export const SETTINGS_COLLECTION = {
     {
       id: 'user',
       roles: [
-
         /**
          * List all users that should be created initially.
          * Initially created users can only login through
@@ -14,12 +13,12 @@ export const SETTINGS_COLLECTION = {
          * firebase dashboard.
          */
         {
-          email: 'test@test.com',
-          role: 'user'
+          email: 'domagoj.miloloza@gmail.com',
+          role: 'admin'
         },
 
         {
-          email: 'info@jaspero.co',
+          email: 'dmiloloza@gmail.com',
           role: 'admin'
         }
       ]

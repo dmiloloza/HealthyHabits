@@ -3,7 +3,11 @@ import {AngularFireModule} from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireAuthGuardModule} from '@angular/fire/auth-guard';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {AngularFireFunctionsModule, ORIGIN, REGION} from '@angular/fire/functions';
+import {
+  AngularFireFunctionsModule,
+  ORIGIN,
+  REGION
+} from '@angular/fire/functions';
 import {AngularFirePerformanceModule} from '@angular/fire/performance';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {DbService} from '../../src/app/shared/services/db/db.service';
@@ -40,7 +44,7 @@ export class FirebaseModule {
         },
         {
           provide: REGION,
-          useValue: 'us-central1'
+          useValue: 'europe-west'
         },
         {
           provide: ORIGIN,
