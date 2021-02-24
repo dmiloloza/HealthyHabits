@@ -4,6 +4,7 @@
   export let imgAlt;
   export let description = 'Priprema: Zobene pahuljice prelijte sa 160 ml vruće vode i ostavite nekoliko minuta da nabubre. Dodajte bananu, lan i sjeckane lješnjake.';
   export let ingredients = [
+    `********HARDCODED*******`,
     `35 g zobenih pahuljica`,
     `150 ml vode`,
     `1 manja banana`,
@@ -15,7 +16,8 @@
 
 <section>
   <h2>{title}</h2>
-  <img alt='slika zobenih' src=''>
+<!--  TODO-->
+  <img alt='****missing pic****' src=''>
   <ul>
     {#each ingredients as ingredient }
       <li>{ingredient}</li>
