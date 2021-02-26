@@ -6,7 +6,6 @@
   export let title;
 </script>
 
-
 <section>
   <h2>{title}</h2>
   <img alt={imgAlt} src={image}>
