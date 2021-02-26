@@ -1,11 +1,11 @@
 <script>
   //db - firestore database
-  import {db} from '../config/firebase';
+  import {firestore} from '../config/firebase';
   import MealCard from './MealCard.svelte';
 
   let meals = [];
 
-  db.collection('breakfast').get()
+  firestore.collection('breakfast').orderBy('title','asc').get()
   .then(data => {
     meals = data.docs.map(value => value.data());
   })

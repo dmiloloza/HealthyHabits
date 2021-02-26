@@ -1,5 +1,6 @@
 <script>
   import Meal from './components/Meal.svelte';
+  import MealCard from './components/MealCard.svelte';
 </script>
 
 <main>
