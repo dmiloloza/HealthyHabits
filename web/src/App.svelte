@@ -1,5 +1,5 @@
 <script>
-  import Meal from './components/Meal.svelte';
+  import Meals from './components/Meals.svelte';
 </script>
 
 <main>
@@ -19,4 +19,4 @@
   </span>
 </main>
 
-<Meal />
+<Meals />
