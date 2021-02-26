@@ -1,13 +1,9 @@
 <script>
-  export let title = '***Zobene pahuljice s bananom***';
+  export let description;
   export let image;
   export let imgAlt;
-  export let description = '***Priprema: Zobene pahuljice prelijte sa 160 ml vruće vode i ostavite nekoliko minuta da nabubre. Dodajte bananu, lan i sjeckane lješnjake.***';
-  export let ingredients = [
-    {name: 'flower', unit:'g', quantity: '**500' },
-    {name: 'water', unit:'dcl', quantity: '3' },
-    {name: 'eggs', unit:'kom', quantity: '2**' },
-  ];
+  export let ingredients = [];
+  export let title;
 </script>
 
 

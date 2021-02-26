@@ -1,5 +1,4 @@
 <script>
-  //db - firestore database
   import {firestore} from '../config/firebase';
   import MealCard from './MealCard.svelte';
 
