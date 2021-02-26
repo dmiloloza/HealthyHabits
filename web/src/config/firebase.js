@@ -8,7 +8,7 @@ import {firebaseConfig} from '../../env-config';
 firebase.initializeApp(firebaseConfig);
 
 // Firebase products
-const Analytics = firebase.analytics();
-const db = firebase.firestore();
+const analytics = firebase.analytics();
+const firestore = firebase.firestore();
 
-export {Analytics, db};
+export {analytics, firestore};
