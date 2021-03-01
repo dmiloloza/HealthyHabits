@@ -6,11 +6,23 @@
   let mealType;
 
   function addMeal(type) {
-    mealType = type;
+    mealType = null;
+
+    setTimeout(() => {
+      showDialog.value = true;
+      mealType = type;
+    });
   }
+
+  let showDialog = {
+    value: false
+  };
 </script>
 
 <Header />
+{#if mealType}
+  <Meals {mealType} {showDialog} />
+{/if}
 <main>
   <span>
     <h3>Doručak</h3>
@@ -25,8 +37,5 @@
       <button on:click={() => addMeal('dinner')}>Add Meal</button>
   </span>
 </main>
-<Footer />
 
-{#if mealType}
-  <Meals {mealType} />
-{/if}
+<Footer />

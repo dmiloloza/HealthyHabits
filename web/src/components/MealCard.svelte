@@ -8,11 +8,13 @@
 
 <section>
   <h2>{title}</h2>
-  <img alt={imgAlt} src={image}>
+  <img alt={imgAlt} src={image} width='150px'>
   <ul>
     {#each ingredients as ingredient }
-      <li>{ingredient.quantity} {ingredient.unit} {ingredient.name} </li>
+      <li>{ingredient}</li>
     {/each}
   </ul>
-  <p>{description}</p>
+  {#if description}
+    <p>{description}</p>
+  {/if}
 </section>
