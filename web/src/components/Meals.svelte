@@ -1,29 +1,32 @@
 <script>
   import {firestore} from '../config/firebase';
   import MealCard from './MealCard.svelte';
+  import {onMount} from 'svelte';
 
   export let mealType;
+  export let showDialog;
 
   let showMeals = true;
   let meals = [];
+  let ingredients = [];
   let filter;
 
-  firestore.collection(mealType).get()
-  .then(data => {
-    meals = data.docs.map(value => value.data());
-  })
-  .catch(err => console.error(err));
+  onMount(async () => {
+    const mealCollection = await firestore.collection(mealType).get();
+    meals = mealCollection.docs.map(value => value.data());
+  });
 </script>
 
-<!--TODO-->
-<!--filter Meals-->
-<div>
-  <input bind:value={filter} type='text'>
-</div>
+{#if showDialog.value}
+  <div>
+    <div>
+      <button on:click={() => showDialog.value = false}>Close</button>
 
-{#if showMeals}
-  <div class='backdrop'>
-    <div class='modal'>
+      <!--      TODO filter Meals-->
+      <!--      <div>-->
+      <!--        <input bind:value={filter} type='text' placeholder='Filter'>-->
+      <!--      </div>-->
+
       {#each meals as meal}
         <MealCard {...meal} />
       {/each}
