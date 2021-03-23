@@ -7,7 +7,6 @@ yarn-error.log*
 firebase-debug.log*
 .idea
 dist
-public
 
 # Firebase cache
 .firebase/
