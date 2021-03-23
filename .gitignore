@@ -8,6 +8,8 @@ firebase-debug.log*
 .idea
 dist
 
+public/cms
+
 # Firebase cache
 .firebase/
 
