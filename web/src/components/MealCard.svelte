@@ -1,20 +1,20 @@
 <script>
-  export let description;
-  export let image;
-  export let imgAlt;
-  export let ingredients = [];
-  export let title;
+  export let category;
+  // export let imgAlt;
+  // export let image;
+  // export let title;
+  // export let description;
+  // export let ingredients = {};
+
 </script>
 
-<section>
-  <h2>{title}</h2>
-  <img alt={imgAlt} src={image} width='150px'>
-  <ul>
-    {#each ingredients as ingredient }
-      <li>{ingredient}</li>
-    {/each}
-  </ul>
-  {#if description}
-    <p>{description}</p>
-  {/if}
-</section>
+<main>
+  <img alt='{category.imageAlt}' src='{category.image}' width='200' />
+  <h2>{category.title}</h2>
+  <p><b>Priprema:</b> {category.description}</p>
+  {#each ingredients as ingredient }
+    <ul>
+      <li>{ingredient.amount} {ingredient.unit} {ingredient.name}</li>
+    </ul>
+  {/each}
+</main>
