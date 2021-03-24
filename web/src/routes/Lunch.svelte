@@ -1,0 +1,14 @@
+<script>
+  import {lunch} from '../../testMenu';
+</script>
+
+{#each lunch as meal }
+  <img alt='{meal.imageAlt}' src='{meal.image}' width='200' />
+  <h2>{meal.title}</h2>
+  <p><b>Priprema:</b> {meal.description}</p>
+  {#each meal.ingredients as ingredient }
+    <ul>
+      <li>{ingredient.amount} {ingredient.unit} {ingredient.name}</li>
+    </ul>
+  {/each}
+{/each}
