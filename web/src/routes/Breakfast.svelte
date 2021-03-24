@@ -3,8 +3,8 @@
 </script>
 
 {#each breakfast as meal }
-  <img alt='{meal.imageAlt}' src='{meal.image}' width='200' />
   <h2>{meal.title}</h2>
+  <img alt='{meal.imageAlt}' src='{meal.image}' width='200' />
   <p><b>Priprema:</b> {meal.description}</p>
   {#each meal.ingredients as ingredient }
     <ul>
