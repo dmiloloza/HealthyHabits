@@ -1,5 +1,4 @@
 <main>
-  <h2>Jelovnik</h2>
   <section>
     <h3>Dručak</h3>
     <img alt='breakfast' src='./images/Savršeni omlet s povrćem.jpg' width='200'>
