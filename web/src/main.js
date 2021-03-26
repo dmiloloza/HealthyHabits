@@ -1,4 +1,5 @@
 import App from './App.svelte';
+//comment this to ignore carbon design css
 import "carbon-components-svelte/css/all.css";
 
 //all html content from App.svelte goes to 'public/index.html' => <body> tag

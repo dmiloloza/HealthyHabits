@@ -11,7 +11,7 @@
 
 <Router url='{url}'>
   <nav>
-    <h2>Healthy Habits</h2>
+    <h3>Healthy Habits</h3>
     <Link to='/'>Jelovnik</Link>
     <Link to='/breakfast'>Doručak</Link>
     <Link to='/lunch'>Ručak</Link>
