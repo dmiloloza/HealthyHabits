@@ -1,6 +1,6 @@
 <main>
   <section>
-    <h2>Dručak</h2>
+    <h2>Doručak</h2>
     <img alt='breakfast' src='./images/Savršeni omlet s povrćem.jpg' width='200'>
   </section>
   <section>
