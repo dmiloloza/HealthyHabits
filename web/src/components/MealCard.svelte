@@ -4,7 +4,7 @@
   export let meals;
 
   let visibleIngredients = false;
-  let visibleDescription = true;
+  let visibleDescription = false;
 </script>
 
 {#each meals as meal }
