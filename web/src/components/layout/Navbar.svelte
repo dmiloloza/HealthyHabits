@@ -12,7 +12,7 @@
 <Router url='{url}'>
   <nav>
     <h2>Healthy Habits</h2>
-    <Link to='/'>Početna</Link>
+    <Link to='/'>Jelovnik</Link>
     <Link to='/breakfast'>Doručak</Link>
     <Link to='/lunch'>Ručak</Link>
     <Link to='/dinner'>Večera</Link>
