@@ -4,4 +4,5 @@
 </script>
 
 <Navbar />
+ads
 <Footer />
